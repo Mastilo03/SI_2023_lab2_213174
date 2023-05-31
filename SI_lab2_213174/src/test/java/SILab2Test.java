@@ -17,7 +17,7 @@ public class SILab2Test {
         ex= assertThrows(RuntimeException.class, () -> SILab2.function(null,allUsers));
         assertTrue(ex.getMessage().contains("Mandatory information missing!"));
         assertFalse(SILab2.function(new User(null,"pass","usergmail.com"),allUsers));
-        assertFalse(SILab2.function(new User(null,"pa ss","usergmail.com"),allUsers));
+        assertFalse(SILab2.function(new User(null,"pa ssword","usergmail.com"),allUsers));
         assertFalse(SILab2.function(new User(null,"password123","usergmail.com"),allUsers));
     }
 
